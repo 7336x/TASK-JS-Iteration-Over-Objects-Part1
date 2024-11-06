@@ -47,6 +47,7 @@ function printMovieTitles(movies) {
       // Print the title of the current movie using dot notation
       console.log(movie.title); // Access the title property of the movie object
     }
+    // or use iterstion ,  movies.forEach(movie) => console.log(movie.title));
 }
 
 // Q3: Write a `countMoviesByYear` function that accepts an array of objects called 'movies'
@@ -57,8 +58,11 @@ function countMoviesByYear(movies, year) {
    const filteredMovies = movies.filter(movie => movie.year === year); // Check each movie's year against the input year
    // Return the length of the filteredMovies array to get the count
    return filteredMovies.length; // Returns the number of movies released in that year
- 
+ // == check value  
+ //===  check type and value 
 }
+//console.log(countMoviesByYear(mymovieList,1994));
+
 
 // Q4: Write a `updateMovieGenre` function that accepts a title and a new genre
 // and updates the genre of the given movie, if it exists,
@@ -75,6 +79,7 @@ function updateMovieGenre(movies, title, newGenre) {
     return movies; // Return the updated array of movies
   
 }//
+//console.log(updateMovieGenre(myMovieList, "The Dark knight","Roumatic Comedy"));
 
 module.exports = {
   hasKey,
