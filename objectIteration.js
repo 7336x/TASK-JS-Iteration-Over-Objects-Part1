@@ -74,7 +74,7 @@ function updateMovieGenre(movies, title, newGenre) {
     // Return the modified array of movies
     return movies; // Return the updated array of movies
   
-}
+}//
 
 module.exports = {
   hasKey,
